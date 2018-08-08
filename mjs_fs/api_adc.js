@@ -19,4 +19,7 @@ let ADC = {
   // 	mode.
   // Return value: Power voltage of VDD33; unit: 1/1024 V.
   read: ffi('int mgos_adc_read(int)'),
+  // Read from the specified analog pin.
+  // Returns voltage on the pin, in mV.
+  read_voltage: ffi('int mgos_adc_read_voltage(int)'),
 };
